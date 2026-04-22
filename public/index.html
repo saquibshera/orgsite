@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Softstacks Technologies – IT Training Institute in Srinagar | AI, Cloud, Full Stack</title>
+<meta name="description" content="Job-ready IT training in Srinagar with Microsoft Certified Trainers. AI, Full Stack, Azure Cloud, Power BI, Python courses with placement support."/>
+<meta name="keywords" content="IT training institute in Srinagar, AI course near me, full stack training with placement, Azure cloud training Srinagar, Python course Kashmir"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0D1B3E;--accent:#E8500A;--accent2:#F97316;--gold:#F5C842;--teal:#0BA898;--light:#F7F5F0;--white:#FFFFFF;--text:#1A1A2E;--muted:#5A637A;--border:rgba(13,27,62,0.12);--section-alt:#F0EDE7;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--text);overflow-x:hidden;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,27,62,0.97);backdrop-filter:blur(12px);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid rgba(255,255,255,0.08);transition:all .3s;}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:#fff;letter-spacing:-.02em;}
+.nav-logo span{color:var(--accent2);}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-cta{background:var(--accent);color:#fff;border:none;padding:.55rem 1.4rem;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;transition:background .2s,transform .15s;}
+.nav-cta:hover{background:var(--accent2);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--navy);padding:1.5rem 2rem;z-index:999;flex-direction:column;gap:1rem;border-bottom:1px solid rgba(255,255,255,.1);}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{color:rgba(255,255,255,.85);text-decoration:none;font-size:1rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.08);}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--navy);position:relative;display:flex;align-items:center;overflow:hidden;padding-top:68px;}
+.hero-bg-pattern{position:absolute;inset:0;opacity:.04;background-image:repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(255,255,255,.5) 60px,rgba(255,255,255,.5) 61px),repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,.5) 60px,rgba(255,255,255,.5) 61px);}
+.orb{position:absolute;border-radius:50%;pointer-events:none;}
+.orb1{width:700px;height:700px;right:-200px;top:-150px;background:radial-gradient(circle,rgba(232,80,10,.22) 0%,transparent 65%);}
+.orb2{width:400px;height:400px;left:-100px;bottom:-100px;background:radial-gradient(circle,rgba(11,168,152,.15) 0%,transparent 65%);}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,80,10,.18);border:1px solid rgba(232,80,10,.4);color:#F97316;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border-radius:99px;margin-bottom:1.5rem;opacity:0;animation:fadeUp .7s .1s both;}
+.hero-badge-dot{width:6px;height:6px;background:var(--accent2);border-radius:50%;animation:pulse 1.8s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.3;transform:scale(.6);}}
+.hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.4rem,5vw,3.8rem);color:#fff;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.2rem;opacity:0;animation:fadeUp .7s .2s both;}
+.highlight{color:var(--accent2);}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.68);line-height:1.7;margin-bottom:2rem;max-width:500px;opacity:0;animation:fadeUp .7s .3s both;}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;opacity:0;animation:fadeUp .7s .4s both;}
+.hero-trust{display:flex;gap:2rem;flex-wrap:wrap;opacity:0;animation:fadeUp .7s .5s both;}
+.trust-item{display:flex;flex-direction:column;}
+.trust-num{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:#fff;line-height:1;}
+.trust-num-suffix{color:var(--accent2);}
+.trust-label{font-size:.78rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.btn-primary{background:var(--accent);color:white;border:none;padding:.85rem 2rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;text-decoration:none;display:inline-block;}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-3px);box-shadow:0 8px 24px rgba(232,80,10,.4);}
+.btn-secondary{background:transparent;color:white;border:1.5px solid rgba(255,255,255,.35);padding:.85rem 2rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;cursor:pointer;transition:border-color .2s,background .2s;text-decoration:none;display:inline-block;}
+.btn-secondary:hover{border-color:white;background:rgba(255,255,255,.08);}
+
+/* typewriter */
+.typewriter-text::after{content:'|';animation:blink .7s infinite;color:var(--accent2);}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+
+/* hero visual */
+.hero-visual{opacity:0;animation:slideLeft .9s .45s both;}
+@keyframes slideLeft{from{opacity:0;transform:translateX(40px);}to{opacity:1;transform:translateX(0);}}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:2rem;backdrop-filter:blur(6px);}
+.hero-card-title{color:rgba(255,255,255,.5);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.2rem;}
+.course-pill{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.1rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:.75rem;cursor:pointer;transition:background .2s,transform .2s;opacity:0;animation:fadeUp .5s both;}
+.course-pill:nth-child(2){animation-delay:.6s}
+.course-pill:nth-child(3){animation-delay:.72s}
+.course-pill:nth-child(4){animation-delay:.84s}
+.course-pill:nth-child(5){animation-delay:.96s}
+.course-pill:nth-child(6){animation-delay:1.08s}
+.course-pill:hover{background:rgba(255,255,255,.14);transform:translateX(5px);}
+.course-pill-name{color:white;font-weight:500;font-size:.95rem;}
+.cpill-tag{font-size:.68rem;font-weight:600;padding:.2rem .6rem;border-radius:99px;text-transform:uppercase;letter-spacing:.05em;}
+.tag-hot{background:var(--accent);color:white;}
+.tag-new{background:var(--gold);color:var(--navy);}
+.tag-pop{background:var(--teal);color:white;}
+.tag-dem{background:#7C3AED;color:white;}
+.tag-beg{background:#059669;color:white;}
+.hero-cert{margin-top:1.5rem;display:flex;align-items:center;gap:.8rem;background:rgba(245,200,66,.12);border:1px solid rgba(245,200,66,.3);border-radius:10px;padding:.75rem 1rem;opacity:0;animation:fadeUp .6s 1.15s both;}
+.cert-text{color:rgba(255,255,255,.85);font-size:.85rem;line-height:1.4;}
+.cert-text strong{color:var(--gold);font-weight:600;display:block;}
+
+/* urgency */
+.urgency-bar{background:var(--accent);color:white;text-align:center;padding:.65rem 2rem;font-size:.88rem;font-weight:500;position:relative;overflow:hidden;}
+.urgency-bar::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);animation:shimmer 2.2s infinite;}
+@keyframes shimmer{to{left:150%;}}
+.urgency-bar a{color:white;font-weight:700;text-decoration:underline;}
+
+/* proof strip */
+.proof-strip{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.8rem 2rem;transition:background .5s;}
+.proof-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;gap:2rem;flex-wrap:wrap;}
+.proof-stat{text-align:center;}
+.proof-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);line-height:1;}
+.proof-desc{font-size:.82rem;color:var(--muted);margin-top:2px;}
+.proof-divider{width:1px;height:3rem;background:var(--border);}
+.stars-animated span{display:inline-block;color:#F59E0B;font-size:1rem;opacity:0;transform:scale(.3);transition:opacity .3s,transform .3s;}
+.stars-animated.fired span:nth-child(1){opacity:1;transform:scale(1);transition-delay:.05s}
+.stars-animated.fired span:nth-child(2){opacity:1;transform:scale(1);transition-delay:.17s}
+.stars-animated.fired span:nth-child(3){opacity:1;transform:scale(1);transition-delay:.29s}
+.stars-animated.fired span:nth-child(4){opacity:1;transform:scale(1);transition-delay:.41s}
+.stars-animated.fired span:nth-child(5){opacity:1;transform:scale(1);transition-delay:.53s}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+.reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-l.in{opacity:1;transform:none;}
+.reveal-r{opacity:0;transform:translateX(36px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-r.in{opacity:1;transform:none;}
+/* After animation fires once, freeze completely so keyboard/resize never re-triggers */
+.reveal.done,.reveal-l.done,.reveal-r.done{transition:none!important;opacity:1!important;transform:none!important;}
+.stagger-grid>*{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease;}
+.stagger-grid.in>*:nth-child(1){opacity:1;transform:none;transition-delay:.04s}
+.stagger-grid.in>*:nth-child(2){opacity:1;transform:none;transition-delay:.12s}
+.stagger-grid.in>*:nth-child(3){opacity:1;transform:none;transition-delay:.2s}
+.stagger-grid.in>*:nth-child(4){opacity:1;transform:none;transition-delay:.28s}
+.stagger-grid.in>*:nth-child(5){opacity:1;transform:none;transition-delay:.36s}
+.stagger-grid.in>*:nth-child(6){opacity:1;transform:none;transition-delay:.44s}
+.stagger-grid.done>*{transition:none!important;opacity:1!important;transform:none!important;}
+
+/* sections */
+section{padding:5rem 2rem;}
+.container{max-width:1200px;margin:0 auto;}
+.section-label{display:inline-block;color:var(--accent);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;}
+.section-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.9rem,4vw,2.8rem);color:var(--navy);letter-spacing:-.03em;line-height:1.15;margin-bottom:1rem;}
+.section-sub{font-size:1.05rem;color:var(--muted);line-height:1.7;max-width:560px;}
+
+/* courses */
+.courses-section{background:var(--section-alt);transition:background .6s;}
+.courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-top:3rem;}
+.course-card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:transform .3s,box-shadow .3s;}
+.course-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(13,27,62,.14);}
+.course-card-top{padding:1.5rem 1.5rem 1rem;}
+.course-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1rem;}
+.course-card h3{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:.4rem;}
+.course-card p{font-size:.88rem;color:var(--muted);line-height:1.6;}
+.course-card-meta{padding:1rem 1.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.meta-tag{font-size:.78rem;font-weight:600;color:var(--muted);}
+.salary-badge{background:#ECFDF5;color:#059669;font-size:.75rem;font-weight:600;padding:.25rem .6rem;border-radius:99px;}
+.trending-badge{background:#FFF7ED;color:#EA580C;font-size:.7rem;font-weight:700;padding:.2rem .55rem;border-radius:99px;letter-spacing:.04em;text-transform:uppercase;margin-left:.5rem;}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem;margin-top:3rem;}
+.why-card{background:#fff;border-radius:14px;padding:1.8rem;border:1px solid var(--border);transition:border-color .3s,transform .3s,box-shadow .3s;}
+.why-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 12px 32px rgba(232,80,10,.1);}
+.why-icon{width:52px;height:52px;border-radius:14px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.2rem;transition:transform .3s;}
+.why-card:hover .why-icon{transform:scale(1.12) rotate(-6deg);}
+.why-card h3{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;}
+.why-card p{font-size:.88rem;color:var(--muted);line-height:1.65;}
+
+/* skills */
+.skills-section{background:#fff;}
+.skills-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.skill-bars{display:flex;flex-direction:column;gap:1.4rem;}
+.skill-row{}
+.skill-label-row{display:flex;justify-content:space-between;font-size:.88rem;font-weight:600;color:var(--navy);margin-bottom:.5rem;}
+.skill-track{height:9px;background:#F0EDE7;border-radius:99px;overflow:hidden;}
+.skill-fill{height:100%;border-radius:99px;width:0;transition:width 1.5s cubic-bezier(.22,1,.36,1);}
+.skill-pct{color:var(--muted);font-weight:500;min-width:38px;text-align:right;transition:color .3s;}
+
+/* placements */
+.placements-section{background:var(--navy);position:relative;overflow:hidden;transition:background .6s;}
+.placements-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,80,10,.14) 0%,transparent 60%);}
+.placements-section .section-title{color:#fff;}
+.placements-section .section-label{color:var(--gold);}
+.placements-section .section-sub{color:rgba(255,255,255,.6);}
+.placement-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem;margin:3rem 0;}
+.placement-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.5rem;text-align:center;transition:background .3s,transform .3s,box-shadow .3s;}
+.placement-stat:hover{background:rgba(255,255,255,.14);transform:scale(1.05);box-shadow:0 8px 24px rgba(0,0,0,.3);}
+.placement-stat .num{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:#fff;}
+.placement-stat .num-suffix{color:var(--accent2);}
+.placement-stat .desc{font-size:.82rem;color:rgba(255,255,255,.55);margin-top:4px;}
+.companies-label{color:rgba(255,255,255,.45);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem;}
+.companies-row{display:flex;flex-wrap:wrap;gap:.75rem;}
+.company-chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.8);padding:.5rem 1.1rem;border-radius:8px;font-size:.85rem;font-weight:500;transition:background .2s,color .2s,transform .2s;cursor:default;}
+.company-chip:hover{background:rgba(255,255,255,.2);color:#fff;transform:translateY(-2px);}
+.stories-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem;}
+.story-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1.5rem;transition:background .3s,transform .3s;}
+.story-card:hover{background:rgba(255,255,255,.13);transform:translateY(-3px);}
+.story-name{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:1rem;}
+.story-role{font-size:.82rem;color:var(--gold);margin-bottom:.75rem;}
+.story-quote{font-size:.9rem;color:rgba(255,255,255,.72);line-height:1.65;font-style:italic;}
+.story-package{display:inline-block;margin-top:1rem;background:rgba(11,168,152,.2);color:var(--teal);font-size:.78rem;font-weight:600;padding:.25rem .7rem;border-radius:99px;}
+
+/* testimonials */
+.testimonials-section{background:var(--light);transition:background .6s;}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
+.testimonial-card{background:#fff;border-radius:16px;padding:1.5rem;border:1px solid var(--border);transition:transform .3s,box-shadow .3s;}
+.testimonial-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(13,27,62,.1);}
+.t-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem;}
+.t-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:white;flex-shrink:0;}
+.t-name{font-weight:600;color:var(--navy);font-size:.95rem;}
+.t-course{font-size:.78rem;color:var(--muted);}
+.t-stars{color:#F59E0B;font-size:.85rem;margin-bottom:.6rem;}
+.t-text{font-size:.88rem;color:var(--muted);line-height:1.65;}
+
+/* recommender */
+.recommender-section{background:var(--section-alt);}
+.recommender-inner{background:#fff;border-radius:20px;padding:2.5rem;border:1px solid var(--border);max-width:700px;margin:3rem auto 0;}
+.rec-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.75rem;margin:1.5rem 0;}
+.rec-option{border:1.5px solid var(--border);border-radius:10px;padding:.75rem 1rem;font-size:.88rem;font-weight:500;cursor:pointer;text-align:center;transition:border-color .2s,background .2s,transform .15s;background:var(--light);color:var(--navy);}
+.rec-option:hover,.rec-option.selected{border-color:var(--accent);background:#FFF4EE;color:var(--accent);transform:scale(1.04);}
+.rec-result{background:var(--navy);color:white;border-radius:12px;padding:1.5rem;display:none;}
+.rec-result.show{display:block;animation:fadeUp .4s both;}
+.rec-result h4{font-family:'Syne',sans-serif;font-size:1rem;margin-bottom:.5rem;color:var(--gold);}
+.rec-result p{font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;}
+.rec-btn{background:var(--accent);color:white;border:none;padding:.7rem 1.8rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;margin-top:1rem;transition:background .2s;}
+.rec-btn:hover{background:var(--accent2);}
+
+/* form */
+.form-section{background:var(--navy);}
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.form-left{will-change:unset;transition:none!important;transform:none!important;opacity:1!important;}
+.form-left .section-title{color:#fff;}
+.form-left .section-label{color:var(--gold);}
+.form-left .section-sub{color:rgba(255,255,255,.65);}
+.form-card{will-change:unset;transition:none!important;transform:none!important;opacity:1!important;}
+/* Lock the form section — no layout shift allowed */
+#contact{contain:layout;}
+#contact .form-wrap{align-items:start;}
+.form-group input,.form-group select{height:44px;}
+/* Reserve height for success message so card never resizes */
+#contact .form-card{min-height:420px;position:relative;}
+#leadForm,#formSuccess{position:relative;}
+#formSuccess{position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);}
+.form-perks{margin-top:2rem;display:flex;flex-direction:column;gap:1rem;}
+.form-perk{display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.8);font-size:.9rem;}
+.form-perk::before{content:'✓';background:var(--teal);color:white;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0;}
+.form-card{background:#fff;border-radius:20px;padding:2.5rem;}
+.form-card h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1.3rem;color:var(--navy);margin-bottom:.3rem;}
+.form-card>p{font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem;}
+.form-group label{font-size:.82rem;font-weight:600;color:var(--navy);}
+.form-group input,.form-group select{padding:.7rem 1rem;border:1.5px solid #E2E8F0;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--text);background:#F8FAFC;transition:border-color .2s;outline:none;}
+.form-group input:focus,.form-group select:focus{border-color:var(--accent);background:white;}
+.form-submit{width:100%;background:var(--accent);color:white;border:none;padding:.9rem 2rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background .2s,transform .15s;margin-top:.5rem;}
+.form-submit:hover{background:var(--accent2);transform:translateY(-1px);}
+.form-note{font-size:.75rem;color:var(--muted);text-align:center;margin-top:.75rem;}
+.form-success{opacity:0;pointer-events:none;text-align:center;padding:2rem;transition:opacity .4s ease;}
+.form-success.show{opacity:1;pointer-events:all;}
+.form-success .icon{font-size:2.5rem;margin-bottom:1rem;}
+.form-success h4{font-family:'Syne',sans-serif;font-size:1.2rem;color:var(--navy);margin-bottom:.5rem;}
+.form-success p{font-size:.88rem;color:var(--muted);}
+
+/* footer */
+footer{background:#0A1428;color:rgba(255,255,255,.65);padding:4rem 2rem 2rem;}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-brand p{font-size:.88rem;line-height:1.7;margin-top:.75rem;color:rgba(255,255,255,.5);}
+.footer-col h4{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.95rem;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+.footer-col ul li a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.88rem;transition:color .2s;}
+.footer-col ul li a:hover{color:white;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;}
+
+/* floating elements */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:.5rem;}
+.wa-btn{width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s;text-decoration:none;}
+.wa-btn:hover{transform:scale(1.1);}
+.wa-btn svg{width:30px;height:30px;fill:white;}
+.wa-tooltip{background:var(--navy);color:white;font-size:.8rem;padding:.4rem .9rem;border-radius:99px;white-space:nowrap;opacity:0;transform:translateX(8px);transition:opacity .25s,transform .25s;pointer-events:none;}
+.wa-float:hover .wa-tooltip{opacity:1;transform:translateX(0);}
+.chat-float{position:fixed;bottom:6.5rem;right:2rem;z-index:998;}
+.chat-toggle{width:52px;height:52px;background:var(--navy);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(13,27,62,.3);color:white;font-size:1.3rem;transition:transform .2s;}
+.chat-toggle:hover{transform:scale(1.1);}
+.chat-window{position:absolute;bottom:64px;right:0;width:300px;background:white;border-radius:16px;border:1px solid var(--border);box-shadow:0 12px 40px rgba(13,27,62,.18);overflow:hidden;display:none;flex-direction:column;}
+.chat-window.open{display:flex;animation:fadeUp .3s both;}
+.chat-header{background:var(--navy);padding:1rem;display:flex;align-items:center;gap:.75rem;}
+.chat-online{width:8px;height:8px;background:#22C55E;border-radius:50%;animation:pulse 1.8s infinite;}
+.chat-title{color:white;font-weight:600;font-size:.9rem;}
+.chat-messages{padding:1rem;display:flex;flex-direction:column;gap:.75rem;min-height:180px;max-height:240px;overflow-y:auto;}
+.cmsg{background:var(--light);border-radius:10px;padding:.65rem .9rem;font-size:.85rem;color:var(--text);line-height:1.5;max-width:85%;animation:fadeUp .3s both;}
+.cmsg.bot{align-self:flex-start;}
+.cmsg.user{align-self:flex-end;background:var(--navy);color:white;}
+.chat-quick{display:flex;flex-wrap:wrap;gap:.5rem;padding:0 1rem .75rem;}
+.cq{background:var(--light);border:1px solid var(--border);border-radius:99px;font-size:.75rem;padding:.3rem .75rem;cursor:pointer;color:var(--navy);font-weight:500;transition:background .15s,color .15s;}
+.cq:hover{background:#FFF4EE;border-color:var(--accent);color:var(--accent);}
+.chat-input-row{display:flex;border-top:1px solid var(--border);}
+.chat-input{flex:1;padding:.7rem 1rem;border:none;font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none;}
+.chat-send{background:var(--accent);color:white;border:none;padding:.7rem 1rem;cursor:pointer;font-size:.9rem;transition:background .2s;}
+.chat-send:hover{background:var(--accent2);}
+
+/* popup */
+.popup-overlay{position:fixed;inset:0;background:rgba(10,20,40,.75);z-index:9999;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .3s;}
+.popup-overlay.show{opacity:1;pointer-events:all;}
+.popup-box{background:white;border-radius:20px;max-width:480px;width:100%;padding:2.5rem;position:relative;transform:translateY(20px);transition:transform .3s;}
+.popup-overlay.show .popup-box{transform:translateY(0);}
+.popup-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--muted);}
+.popup-tag{background:#FFF4EE;color:var(--accent);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.3rem .8rem;border-radius:99px;display:inline-block;margin-bottom:.75rem;}
+.popup-box h3{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy);margin-bottom:.5rem;}
+.popup-box p{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.6;}
+.popup-form{display:flex;gap:.75rem;}
+.popup-form input{flex:1;padding:.7rem 1rem;border:1.5px solid #E2E8F0;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;}
+.popup-form button{background:var(--accent);color:white;border:none;padding:.7rem 1.4rem;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer;white-space:nowrap;font-family:'DM Sans',sans-serif;}
+.popup-skip{font-size:.78rem;color:var(--muted);cursor:pointer;margin-top:.75rem;text-align:center;text-decoration:underline;}
+
+/* floating particles */
+.particle{position:absolute;border-radius:50%;pointer-events:none;}
+@keyframes floatUp{0%{transform:translateY(0) translateX(0);opacity:.6;}100%{transform:translateY(-140px) translateX(15px);opacity:0;}}
+
+.g-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;}
+.g-logo span:nth-child(1){color:#4285F4}.g-logo span:nth-child(2){color:#EA4335}.g-logo span:nth-child(3){color:#FBBC04}.g-logo span:nth-child(4){color:#4285F4}.g-logo span:nth-child(5){color:#34A853}.g-logo span:nth-child(6){color:#EA4335}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem;padding:4rem 1.5rem 3rem;}
+  .hero-visual{display:none;}
+  .form-wrap{grid-template-columns:1fr;gap:2.5rem;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .form-row{grid-template-columns:1fr;}
+  .popup-form{flex-direction:column;}
+  .skills-inner{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  section{padding:3.5rem 1.25rem;}
+  .footer-grid{grid-template-columns:1fr;}
+  .proof-divider{display:none;}
+  .chat-float,.wa-float{right:1rem;}
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <div class="nav-logo">Soft<span>stacks</span></div>
+  <ul class="nav-links">
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#placements">Placements</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="goTo('#contact')">Book Free Demo</button>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#courses" onclick="closeMenu()">Courses</a>
+  <a href="#why-us" onclick="closeMenu()">Why Us</a>
+  <a href="#placements" onclick="closeMenu()">Placements</a>
+  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()">Book Free Demo</a>
+</div>
+
+<div class="urgency-bar" style="margin-top:68px">
+  ⚡ <strong>New Batch Starting May 5th</strong> — Only 8 Seats Left. <a href="#contact">Reserve Your Spot →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="heroSection">
+  <div class="hero-bg-pattern"></div>
+  <div class="orb orb1" id="orb1"></div>
+  <div class="orb orb2" id="orb2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="hero-badge-dot"></span>🏆 #1 IT Training in Srinagar</div>
+      <h1>Become <span class="highlight typewriter-text" id="heroTW"></span><br>in IT in 16 Weeks</h1>
+      <p class="hero-sub">Microsoft Certified Trainers. Real-world projects. Placement support. 10+ years of transforming careers across Kashmir.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">📅 Book Free Demo</a>
+        <a href="#courses" class="btn-secondary">Explore Courses →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-num"><span id="hs1">0</span><span class="trust-num-suffix">+</span></span><span class="trust-label">Students Placed</span></div>
+        <div class="trust-item"><span class="trust-num"><span id="hs2">0</span><span class="trust-num-suffix">+</span></span><span class="trust-label">Years Experience</span></div>
+        <div class="trust-item"><span class="trust-num"><span id="hs3">0</span><span class="trust-num-suffix">★</span></span><span class="trust-label">Google Rating</span></div>
+        <div class="trust-item"><span class="trust-num"><span id="hs4">0</span><span class="trust-num-suffix">+</span></span><span class="trust-label">Hiring Partners</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-title">Popular Courses</div>
+        <div class="course-pill"><span class="course-pill-name">🤖 AI Agents & Copilot</span><span class="cpill-tag tag-hot">Trending</span></div>
+        <div class="course-pill"><span class="course-pill-name">☁️ Azure Cloud (AZ-900)</span><span class="cpill-tag tag-new">New</span></div>
+        <div class="course-pill"><span class="course-pill-name">💻 Full Stack Development</span><span class="cpill-tag tag-pop">Popular</span></div>
+        <div class="course-pill"><span class="course-pill-name">📊 Power BI & Analytics</span><span class="cpill-tag tag-dem">In Demand</span></div>
+        <div class="course-pill"><span class="course-pill-name">🐍 Python Programming</span><span class="cpill-tag tag-beg">Beginner</span></div>
+        <div class="hero-cert">
+          <span style="font-size:1.4rem">🏅</span>
+          <div class="cert-text"><strong>Microsoft Certified Trainers</strong>Industry-recognized certifications included</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip" id="proofStrip">
+  <div class="proof-inner">
+    <div class="proof-stat"><div class="proof-num counter" data-target="500" data-suffix="+">0</div><div class="proof-desc">Students Placed</div></div>
+    <div class="proof-divider"></div>
+    <div class="proof-stat"><div class="proof-num">₹4L–18L</div><div class="proof-desc">Average Salary Range</div></div>
+    <div class="proof-divider"></div>
+    <div class="proof-stat">
+      <div class="stars-animated" id="starsEl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="proof-desc">4.9 Google Rating · 200+ Reviews</div>
+    </div>
+    <div class="proof-divider"></div>
+    <div class="proof-stat"><div class="proof-num counter" data-target="10" data-suffix="+">0</div><div class="proof-desc">Years of Excellence</div></div>
+    <div class="proof-divider"></div>
+    <div class="proof-stat">
+      <div style="display:flex;align-items:center;gap:6px;justify-content:center">
+        <div class="g-logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+        <div style="font-weight:700;color:#0D1B3E;font-size:1.2rem">4.9</div>
+      </div>
+      <div class="proof-desc">Verified Reviews</div>
+    </div>
+  </div>
+</div>
+
+<!-- COURSES -->
+<section class="courses-section" id="courses">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">What We Teach</span>
+      <h2 class="section-title">Job-Oriented Courses<br>Built for 2025 & Beyond</h2>
+      <p class="section-sub">Every course is designed around real hiring requirements. Graduate with projects, certifications, and interview readiness.</p>
+    </div>
+    <div class="courses-grid stagger-grid">
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#FFF4EE">🤖</div><h3>AI Agents & Copilot <span class="trending-badge">🔥 Hot</span></h3><p>Build intelligent AI agents, automate workflows with Microsoft Copilot, and integrate LLMs into real applications.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ 12 Weeks</span><span class="salary-badge">₹8L – 18L / year</span></div></div>
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#EFF6FF">☁️</div><h3>Azure Cloud (AZ-900 / AZ-104)</h3><p>Master Microsoft Azure from fundamentals to administration. Globally recognized certification included.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ 10 Weeks</span><span class="salary-badge">₹6L – 16L / year</span></div></div>
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#F0FDF4">💻</div><h3>Full Stack Development</h3><p>HTML, CSS, JavaScript, React, Node.js, SQL — build complete web apps from scratch with deployment skills.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ 16 Weeks</span><span class="salary-badge">₹5L – 14L / year</span></div></div>
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#FFFBEB">📊</div><h3>Power BI & Data Analytics <span class="trending-badge" style="background:#FEF9C3;color:#854D0E">New</span></h3><p>Transform raw data into business insights using Power BI, DAX, and data modeling techniques.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ 8 Weeks</span><span class="salary-badge">₹5L – 12L / year</span></div></div>
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#F0FDF4">🐍</div><h3>Python Programming</h3><p>From beginner to advanced — Python for automation, data analysis, web development, and AI/ML foundations.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ 10 Weeks</span><span class="salary-badge">₹4L – 12L / year</span></div></div>
+      <div class="course-card"><div class="course-card-top"><div class="course-icon" style="background:#FDF4FF">👶</div><h3>Kids Coding (Ages 8–16)</h3><p>Scratch, Python basics, and logical thinking. Give your child the most valuable skill of the 21st century.</p></div><div class="course-card-meta"><span class="meta-tag">⏱ Ongoing</span><span class="salary-badge" style="background:#F3E8FF;color:#7C3AED">Weekend Batches</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem" class="reveal">
+      <a href="#contact" class="btn-primary" style="color:white">Enroll Now or Book a Free Demo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Why Softstacks</span>
+      <h2 class="section-title">We Don't Just Train.<br>We Make You Job-Ready.</h2>
+      <p class="section-sub">Most institutes teach theory. We build careers. Here's what makes us different.</p>
+    </div>
+    <div class="why-grid stagger-grid">
+      <div class="why-card"><div class="why-icon">🏅</div><h3>Microsoft Certified Trainers</h3><p>Learn from MCTs with real industry experience — not just classroom theory. Our trainers have worked at top MNCs.</p></div>
+      <div class="why-card"><div class="why-icon">📅</div><h3>10+ Years of Excellence</h3><p>Over a decade of successfully placing students in top companies across India. A proven, trusted track record.</p></div>
+      <div class="why-card"><div class="why-icon">🎯</div><h3>Placement-Focused Training</h3><p>Resume prep, mock interviews, LinkedIn optimization, and direct referrals to our 50+ hiring partners.</p></div>
+      <div class="why-card"><div class="why-icon">🛠️</div><h3>Real-World Projects</h3><p>Work on live industry projects, not assignments. Build a portfolio employers actually want to see.</p></div>
+      <div class="why-card"><div class="why-icon">🤖</div><h3>Latest AI & Cloud Courses</h3><p>We update our curriculum every 3 months. AI Agents, Copilot, Azure AI — always current, always relevant.</p></div>
+      <div class="why-card"><div class="why-icon">🧑‍🤝‍🧑</div><h3>Small Batch Sizes</h3><p>Maximum 15 students per batch ensures personal attention, faster doubt resolution, and better outcomes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+  <div class="container">
+    <div class="skills-inner reveal">
+      <div>
+        <span class="section-label">Our Expertise</span>
+        <h2 class="section-title">Industry-Grade Skills<br>We Teach</h2>
+        <p class="section-sub">Not slides. Not theory. Real tools that companies are hiring for right now.</p>
+      </div>
+      <div class="skill-bars" id="skillBars">
+        <div class="skill-row"><div class="skill-label-row"><span>AI & Machine Learning</span><span class="skill-pct" id="sp0">0%</span></div><div class="skill-track"><div class="skill-fill" data-w="92" style="background:linear-gradient(90deg,#E8500A,#F97316)"></div></div></div>
+        <div class="skill-row"><div class="skill-label-row"><span>Azure Cloud</span><span class="skill-pct" id="sp1">0%</span></div><div class="skill-track"><div class="skill-fill" data-w="96" style="background:linear-gradient(90deg,#0078D4,#50B7F5)"></div></div></div>
+        <div class="skill-row"><div class="skill-label-row"><span>Full Stack Development</span><span class="skill-pct" id="sp2">0%</span></div><div class="skill-track"><div class="skill-fill" data-w="89" style="background:linear-gradient(90deg,#059669,#34D399)"></div></div></div>
+        <div class="skill-row"><div class="skill-label-row"><span>Power BI & Analytics</span><span class="skill-pct" id="sp3">0%</span></div><div class="skill-track"><div class="skill-fill" data-w="94" style="background:linear-gradient(90deg,#CA8A04,#FDE047)"></div></div></div>
+        <div class="skill-row"><div class="skill-label-row"><span>Python</span><span class="skill-pct" id="sp4">0%</span></div><div class="skill-track"><div class="skill-fill" data-w="91" style="background:linear-gradient(90deg,#7C3AED,#A78BFA)"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENTS -->
+<section class="placements-section" id="placements">
+  <div class="container" style="position:relative;z-index:1">
+    <div class="reveal">
+      <span class="section-label">Placement Record</span>
+      <h2 class="section-title">Real Students.<br>Real Jobs. Real Salaries.</h2>
+      <p class="section-sub">Our placement stats speak louder than any promise.</p>
+    </div>
+    <div class="placement-stats stagger-grid">
+      <div class="placement-stat"><div class="num counter" data-target="500" data-suffix="+">0</div><div class="desc">Students Placed</div></div>
+      <div class="placement-stat"><div class="num counter" data-target="50" data-suffix="+">0</div><div class="desc">Hiring Partners</div></div>
+      <div class="placement-stat"><div class="num">₹18L</div><div class="desc">Highest Package</div></div>
+      <div class="placement-stat"><div class="num counter" data-target="92" data-suffix="%">0</div><div class="desc">Placement Rate</div></div>
+      <div class="placement-stat"><div class="num">₹7L</div><div class="desc">Average Package</div></div>
+    </div>
+    <div class="reveal">
+      <p class="companies-label">Our Students Now Work At</p>
+      <div class="companies-row">
+        <div class="company-chip">Infosys</div><div class="company-chip">TCS</div><div class="company-chip">Wipro</div><div class="company-chip">HCL Technologies</div><div class="company-chip">Tech Mahindra</div><div class="company-chip">Capgemini</div><div class="company-chip">Accenture</div><div class="company-chip">IBM</div><div class="company-chip">Microsoft Partners</div><div class="company-chip">Various Startups</div>
+      </div>
+    </div>
+    <div class="stories-grid stagger-grid">
+      <div class="story-card"><div class="story-name">Amir Khan</div><div class="story-role">Placed at TCS · Azure Cloud Developer</div><div class="story-quote">"I was a commerce graduate with zero IT background. Softstacks changed everything. Got my first IT job in 4 months."</div><div class="story-package">💰 Package: ₹6.5L/year</div></div>
+      <div class="story-card"><div class="story-name">Sana Mir</div><div class="story-role">Placed at Wipro · React Developer</div><div class="story-quote">"The Full Stack course was intensive and practical. I built 3 real projects during training. Wipro hired me directly."</div><div class="story-package">💰 Package: ₹5.8L/year</div></div>
+      <div class="story-card"><div class="story-name">Tariq Lone</div><div class="story-role">Data Analyst at HCL · Power BI</div><div class="story-quote">"Had 2 years of experience but was stuck. Power BI course helped me switch to a 3x better role. World-class trainers."</div><div class="story-package">💰 Package: ₹9L/year</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Student Reviews</span>
+      <h2 class="section-title">What Our Students Say</h2>
+      <p class="section-sub">Verified Google Reviews from real students — unfiltered and unedited.</p>
+    </div>
+    <div class="testimonials-grid stagger-grid">
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#0D1B3E">AK</div><div><div class="t-name">Adil Khan</div><div class="t-course">Full Stack Development</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"Best decision of my life. The trainers are incredibly patient and knowledgeable. Got placed within 2 months!"</div></div>
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#E8500A">FM</div><div><div class="t-name">Fatima Malik</div><div class="t-course">Azure Cloud</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"I cleared AZ-900 in my first attempt. The study material is excellent and the hands-on labs are exactly what the exam needs."</div></div>
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#0BA898">ZB</div><div><div class="t-name">Zahir Bhat</div><div class="t-course">Python & AI</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"Started with zero coding knowledge. Now I work as a Python developer at a Bangalore startup. Softstacks made it possible."</div></div>
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#7C3AED">NA</div><div><div class="t-name">Nadia Ashraf</div><div class="t-course">Power BI</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"The Power BI course was packed with real-world scenarios. I was applying dashboards to my company's data within week 2!"</div></div>
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#059669">IW</div><div><div class="t-name">Irfan Wani</div><div class="t-course">AI Agents & Copilot</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"This is the future of tech and Softstacks is already teaching it. The AI Agents course is unlike anything else in Kashmir."</div></div>
+      <div class="testimonial-card"><div class="t-header"><div class="t-avatar" style="background:#DC2626">RS</div><div><div class="t-name">Rukhsana Shah</div><div class="t-course">Kids Coding (Parent)</div></div></div><div class="t-stars">★★★★★</div><div class="t-text">"My 10-year-old daughter loves the weekend coding class. She's built her own small game! Wonderful instructor."</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOMMENDER -->
+<section class="recommender-section">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <span class="section-label">Smart Course Finder</span>
+      <h2 class="section-title">Not Sure Which Course Is Right for You?</h2>
+      <p class="section-sub" style="margin:0 auto">Answer 2 quick questions and we'll recommend your perfect career path.</p>
+    </div>
+    <div class="recommender-inner reveal">
+      <p style="font-weight:600;color:var(--navy);margin-bottom:.5rem">What's your background?</p>
+      <div class="rec-options" id="bgOptions">
+        <div class="rec-option" onclick="selectBg(this,'fresher')">🎓 Fresh Graduate</div>
+        <div class="rec-option" onclick="selectBg(this,'working')">💼 Working Professional</div>
+        <div class="rec-option" onclick="selectBg(this,'student')">📚 Still Studying</div>
+        <div class="rec-option" onclick="selectBg(this,'parent')">👨‍👩‍👧 Parent (for kid)</div>
+      </div>
+      <p style="font-weight:600;color:var(--navy);margin-bottom:.5rem">What's your goal?</p>
+      <div class="rec-options" id="goalOptions">
+        <div class="rec-option" onclick="selectGoal(this,'job')">🚀 Get a Job Fast</div>
+        <div class="rec-option" onclick="selectGoal(this,'salary')">💰 Higher Salary</div>
+        <div class="rec-option" onclick="selectGoal(this,'future')">🤖 AI & Future Tech</div>
+        <div class="rec-option" onclick="selectGoal(this,'kid')">🎮 Fun & Creativity</div>
+      </div>
+      <button class="rec-btn" onclick="getRecommendation()">Get My Recommendation →</button>
+      <div class="rec-result" id="recResult"><h4 id="recTitle"></h4><p id="recText"></p><a href="#contact" class="rec-btn" style="display:inline-block;text-decoration:none;margin-top:1rem">Book Free Demo for This Course →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="contact">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-left">
+        <span class="section-label">Free Career Guidance</span>
+        <h2 class="section-title">Book Your Free Demo Session</h2>
+        <p class="section-sub">30 minutes with an expert trainer. Zero obligation. Walk away with a clear career roadmap.</p>
+        <div class="form-perks">
+          <div class="form-perk">Personalized course recommendation</div>
+          <div class="form-perk">Salary & career path guidance</div>
+          <div class="form-perk">Live Q&A with a Microsoft Certified Trainer</div>
+          <div class="form-perk">Exclusive early-bird batch discount</div>
+          <div class="form-perk">Free study material worth ₹2,000</div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>Register for Free Demo</h3>
+        <p>Limited seats available. Hurry — next batch starts May 5th!</p>
+        <div id="leadForm">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" id="fname" placeholder="Amir" required/></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" id="lname" placeholder="Khan" required/></div>
+          </div>
+          <div class="form-group"><label>Email Address *</label><input type="email" id="email" placeholder="amir@email.com" required/></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" id="phone" placeholder="+91 98765 43210" required/></div>
+          <div class="form-group"><label>Course Interest *</label>
+            <select id="course">
+              <option value="">Select a course...</option>
+              <option>AI Agents & Copilot</option>
+              <option>Azure Cloud (AZ-900 / AZ-104)</option>
+              <option>Full Stack Development</option>
+              <option>Power BI & Data Analytics</option>
+              <option>Python Programming</option>
+              <option>Kids Coding</option>
+              <option>Not Sure – Need Guidance</option>
+            </select>
+          </div>
+          <button class="form-submit" onclick="submitForm()">🎯 Book My Free Demo Session</button>
+          <p class="form-note">🔒 We respect your privacy. No spam, ever. Confirmation via email and WhatsApp.</p>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="icon">🎉</div>
+          <h4>You're All Set!</h4>
+          <p>Our team will reach out within <strong>30 minutes</strong> to confirm your slot.</p>
+          <a href="https://wa.me/919999999999?text=Hi%20Softstacks!" target="_blank" class="btn-primary" style="margin-top:1.2rem;display:inline-block;color:white">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.5rem">Soft<span>stacks</span></div>
+        <p>Srinagar's most trusted IT training institute. Microsoft Certified Trainers. Real projects. Real placements. Since 2014.</p>
+        <div style="margin-top:1rem;font-size:.82rem;color:rgba(255,255,255,.4)">📍 Srinagar, Jammu & Kashmir, India<br>📞 +91 99999 99999<br>✉️ info@softstacks.in</div>
+      </div>
+      <div class="footer-col"><h4>Courses</h4><ul><li><a href="#">AI Agents & Copilot</a></li><li><a href="#">Azure Cloud</a></li><li><a href="#">Full Stack Dev</a></li><li><a href="#">Power BI</a></li><li><a href="#">Python</a></li><li><a href="#">Kids Coding</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Our Trainers</a></li><li><a href="#">Placements</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#contact">Book Free Demo</a></li><li><a href="#">Download Brochure</a></li><li><a href="#">Student Portal</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Softstacks Technologies. All rights reserved.</span>
+      <span>IT Training Institute in Srinagar | AI Course Kashmir | Full Stack with Placement</span>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <span class="wa-tooltip">Chat with us on WhatsApp</span>
+  <a class="wa-btn" href="https://wa.me/919999999999?text=Hi%20Softstacks!%20I'm%20interested%20in%20your%20IT%20courses." target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<div class="chat-float">
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header"><div class="chat-online"></div><div class="chat-title">Softstacks Assistant</div></div>
+    <div class="chat-messages" id="chatMessages"><div class="cmsg bot">👋 Hi! Ask me about courses, fees, placements, or book a demo!</div></div>
+    <div class="chat-quick">
+      <div class="cq" onclick="chatReply('What courses do you offer?')">Courses</div>
+      <div class="cq" onclick="chatReply('How much does it cost?')">Fees</div>
+      <div class="cq" onclick="chatReply('What is the placement rate?')">Placements</div>
+      <div class="cq" onclick="chatReply('Book a free demo')">Book Demo</div>
+    </div>
+    <div class="chat-input-row">
+      <input class="chat-input" id="chatInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()"/>
+      <button class="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+  <button class="chat-toggle" onclick="toggleChat()">💬</button>
+</div>
+
+<div class="popup-overlay" id="exitPopup">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <div class="popup-tag">🎁 Wait! Special Offer</div>
+    <h3>Don't Leave Without Your Free Career Guide</h3>
+    <p>Get our free "IT Career Roadmap 2025" — the exact path our placed students followed.</p>
+    <div class="popup-form"><input type="email" id="popupEmail" placeholder="Enter your email..."/><button onclick="popupSubmit()">Get It Free</button></div>
+    <div class="popup-skip" onclick="closePopup()">No thanks, I'll figure it out myself.</div>
+  </div>
+</div>
+
+<script>
+// ─────────── TYPEWRITER ───────────
+(function(){
+  const words=['Job-Ready','Unstoppable','Hireable','Future-Proof'];
+  let wi=0,ci=0,del=false;
+  const el=document.getElementById('heroTW');
+  if(!el)return;
+  el.classList.add('typewriter-text');
+  function tick(){
+    const w=words[wi];
+    el.textContent=del?w.slice(0,--ci):w.slice(0,++ci);
+    if(!del&&ci===w.length){setTimeout(()=>{del=true;setTimeout(tick,80);},1900);return;}
+    if(del&&ci===0){del=false;wi=(wi+1)%words.length;}
+    setTimeout(tick,del?55:105);
+  }
+  setTimeout(tick,950);
+})();
+
+// ─────────── COUNTER UTILITY ───────────
+function runCounter(el,target,suffix,dur){
+  if(el.dataset.done)return; el.dataset.done='1';
+  let t0=null;
+  (function step(ts){
+    if(!t0)t0=ts;
+    const p=Math.min((ts-t0)/dur,1);
+    const ease=1-Math.pow(1-p,4);
+    el.textContent=Math.floor(target*ease)+suffix;
+    if(p<1)requestAnimationFrame(step);
+    else el.textContent=target+suffix;
+  })(performance.now());
+}
+
+// ─────────── HERO STAT COUNTERS (on load) ───────────
+setTimeout(()=>runCounter(document.getElementById('hs1'),500,'',1600),700);
+setTimeout(()=>runCounter(document.getElementById('hs2'),10,'',1700),850);
+setTimeout(()=>{
+  const el=document.getElementById('hs3');if(!el||el.dataset.done)return;el.dataset.done='1';
+  let t0=null,dur=1600,target=4.9;
+  (function step(ts){if(!t0)t0=ts;const p=Math.min((ts-t0)/dur,1);const e=1-Math.pow(1-p,4);el.textContent=(target*e).toFixed(1);if(p<1)requestAnimationFrame(step);else el.textContent='4.9';})();
+},950);
+setTimeout(()=>runCounter(document.getElementById('hs4'),50,'',1800),1050);
+
+// ─────────── PARTICLES IN HERO ───────────
+const hero=document.getElementById('heroSection');
+if(hero){
+  for(let i=0;i<20;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    const sz=Math.random()*4+2;
+    const dur=(Math.random()*4+3).toFixed(1);
+    const delay=(Math.random()*5).toFixed(1);
+    p.style.cssText=`width:${sz}px;height:${sz}px;left:${(Math.random()*100).toFixed(1)}%;bottom:${(Math.random()*25).toFixed(1)}%;background:rgba(249,115,22,${(Math.random()*.35+.1).toFixed(2)});animation:floatUp ${dur}s ${delay}s infinite linear;`;
+    hero.appendChild(p);
+  }
+}
+
+// ─────────── FREEZE FORM SECTION IMMEDIATELY ───────────
+// Prevent any animation/layout shift on form elements when mobile keyboard opens
+document.querySelectorAll('.form-left,.form-card').forEach(el=>{
+  el.classList.add('done');
+  el.style.opacity='1';
+  el.style.transform='none';
+  el.style.transition='none';
+});
+
+// ─────────── INTERSECTION OBSERVER ───────────
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target;
+      // Skip animations on form section to prevent layout shifts
+      if(el.classList.contains('reveal-l') || el.classList.contains('reveal-r')){
+        if(el.closest('.form-section')){
+          el.classList.add('done');
+          obs.unobserve(el);
+          return;
+        }
+      }
+      el.classList.add('in');
+      obs.unobserve(el);
+      const freeze=()=>{
+        el.classList.add('done');
+        el.removeEventListener('transitionend',freeze);
+      };
+      el.addEventListener('transitionend',freeze);
+      setTimeout(()=>{ if(!el.classList.contains('done')) freeze(); },1000);
+    }
+  });
+},{threshold:.14});
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.stagger-grid').forEach(el=>obs.observe(el));
+
+// Counter obs
+const cObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const t=parseInt(e.target.dataset.target),s=e.target.dataset.suffix||'';
+      runCounter(e.target,t,s,1800);
+      cObs.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+document.querySelectorAll('.counter').forEach(el=>cObs.observe(el));
+
+// Stars obs
+const starsEl=document.getElementById('starsEl');
+if(starsEl){
+  new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){starsEl.classList.add('fired');}
+  },{threshold:.5}).observe(starsEl);
+}
+
+// Skill bars obs
+let skillsFired=false;
+new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting&&!skillsFired){
+    skillsFired=true;
+    document.querySelectorAll('.skill-fill').forEach((bar,i)=>{
+      const target=parseInt(bar.dataset.w);
+      const pctEl=document.getElementById('sp'+i);
+      setTimeout(()=>{
+        bar.style.width=target+'%';
+        let t0=null,dur=1400;
+        (function step(ts){
+          if(!t0)t0=ts;const p=Math.min((ts-t0)/dur,1);const e=1-Math.pow(1-p,4);
+          const v=Math.floor(target*e);
+          if(pctEl)pctEl.textContent=v+'%';
+          if(p<1)requestAnimationFrame(step);else if(pctEl)pctEl.textContent=target+'%';
+        })();
+      },i*130);
+    });
+  }
+},{threshold:.25}).observe(document.getElementById('skillBars')||document.body);
+
+// ─────────── SCROLL: BG COLOR TRANSITION + PARALLAX ───────────
+const sectionBgs=[
+  {el:()=>document.querySelector('.courses-section'),   light:'#F0EDE7', scrolled:'#EAE5DD'},
+  {el:()=>document.querySelector('.testimonials-section'), light:'#F7F5F0', scrolled:'#EEE9E1'},
+];
+
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+
+  // Nav shadow on scroll
+  document.getElementById('mainNav').style.boxShadow=y>80?'0 2px 20px rgba(0,0,0,.25)':'none';
+
+  // Skip parallax & bg transitions while any input/select is focused
+  // (mobile keyboard open changes visualViewport → triggers scroll → causes jumps)
+  const focused=document.activeElement;
+  const inputFocused=focused&&(focused.tagName==='INPUT'||focused.tagName==='SELECT'||focused.tagName==='TEXTAREA');
+  if(inputFocused)return;
+
+  // Parallax hero orbs
+  const o1=document.getElementById('orb1'),o2=document.getElementById('orb2');
+  if(o1)o1.style.transform=`translateY(${y*.18}px)`;
+  if(o2)o2.style.transform=`translateY(${y*.1}px)`;
+
+  // Scroll-driven section background warmth
+  sectionBgs.forEach(({el,light,scrolled})=>{
+    const s=el();if(!s)return;
+    const rect=s.getBoundingClientRect();
+    const progress=Math.max(0,Math.min(1,1-rect.top/window.innerHeight));
+    s.style.backgroundColor=lerpColor(light,scrolled,progress);
+  });
+
+  // Placement section glow intensity
+  const ps=document.querySelector('.placements-section');
+  if(ps){
+    const rect=ps.getBoundingClientRect();
+    const p=Math.max(0,Math.min(1,1-rect.top/window.innerHeight));
+    ps.style.background=`linear-gradient(135deg, #0D1B3E 0%, #${lerpHex('0D1B3E','1A2F5E',p)} 100%)`;
+  }
+},{passive:true});
+
+function lerpColor(a,b,t){
+  const pa=parseHex(a),pb=parseHex(b);
+  return '#'+pa.map((v,i)=>Math.round(v+(pb[i]-v)*t).toString(16).padStart(2,'0')).join('');
+}
+function parseHex(h){h=h.replace('#','');return[0,2,4].map(i=>parseInt(h.slice(i,i+2),16));}
+function lerpHex(a,b,t){return parseHex('#'+a).map((v,i)=>Math.round(v+(parseHex('#'+b)[i]-v)*t).toString(16).padStart(2,'0')).join('');}
+
+// ─────────── NAV ───────────
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+function goTo(sel){document.querySelector(sel)?.scrollIntoView({behavior:'smooth'});}
+
+// ─────────── FORM ───────────
+async function submitForm(){
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const course = document.getElementById('course').value;
+
+  if(!fname||!lname||!email||!phone||!course){
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // Disable button & show loading state
+  const btn = document.querySelector('.form-submit');
+  const originalText = btn.textContent;
+  btn.textContent = '⏳ Submitting...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('/api/lead/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fname, lname, email, phone, course })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      const form = document.getElementById('leadForm');
+      const s = document.getElementById('formSuccess');
+      form.style.opacity = '0';
+      form.style.pointerEvents = 'none';
+      form.style.transition = 'opacity .3s ease';
+      s.classList.add('show');
+    } else {
+      alert('⚠️ ' + (data.message || 'Something went wrong. Please try again.'));
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }
+  } catch (err) {
+    alert('⚠️ Network error. Please check your connection or contact us via WhatsApp.');
+    btn.textContent = originalText;
+    btn.disabled = false;
+  }
+}
+
+// ─────────── RECOMMENDER ───────────
+let sBg='',sGoal='';
+function selectBg(el,v){document.querySelectorAll('#bgOptions .rec-option').forEach(e=>e.classList.remove('selected'));el.classList.add('selected');sBg=v;}
+function selectGoal(el,v){document.querySelectorAll('#goalOptions .rec-option').forEach(e=>e.classList.remove('selected'));el.classList.add('selected');sGoal=v;}
+function getRecommendation(){
+  if(!sBg||!sGoal){alert('Please select both options.');return;}
+  const M={'fresher-job':'Full Stack Development','fresher-salary':'Azure Cloud (AZ-900)','fresher-future':'AI Agents & Copilot','fresher-kid':'Kids Coding','working-job':'Power BI & Data Analytics','working-salary':'Azure Cloud (AZ-104)','working-future':'AI Agents & Copilot','working-kid':'Kids Coding','student-job':'Python Programming','student-salary':'Full Stack Development','student-future':'AI Agents & Copilot','student-kid':'Kids Coding','parent-job':'Kids Coding','parent-salary':'Kids Coding','parent-future':'Kids Coding','parent-kid':'Kids Coding'};
+  const D={'Full Stack Development':'Perfect for freshers wanting a fast track into development. Build real apps, earn ₹5–14L starting salary.','Azure Cloud (AZ-900)':'The most in-demand cloud certification globally. Get hired at TCS, Wipro, HCL with a verified Microsoft badge.','AI Agents & Copilot':'The future is AI. Learn to build intelligent agents and Copilot workflows — salary up to ₹18L.','Kids Coding':'Weekend batches, fun curriculum, Scratch + Python. Build your child\'s logical thinking and creativity.','Power BI & Data Analytics':'Best for professionals switching to data. Dashboards in week 2, job-ready by week 8.','Azure Cloud (AZ-104)':'Advanced Azure administration. For professionals targeting ₹10L+ roles at cloud-first companies.','Python Programming':'Versatile, beginner-friendly, opens doors to AI, web, and data — the best first language.'};
+  const k=sBg+'-'+sGoal,c=M[k]||'Full Stack Development';
+  document.getElementById('recTitle').textContent='We Recommend: '+c;
+  document.getElementById('recText').textContent=D[c]||'A great fit for your goals. Book a demo to learn more.';
+  document.getElementById('recResult').classList.add('show');
+}
+
+// ─────────── CHATBOT ───────────
+function toggleChat(){document.getElementById('chatWindow').classList.toggle('open');}
+const BA={'what courses do you offer':'We offer: AI Agents & Copilot 🤖, Azure Cloud ☁️, Full Stack Development 💻, Power BI 📊, Python 🐍, and Kids Coding 👶. Each comes with placement support!','how much does it cost':'Course fees vary — typically ₹15,000–₹45,000. We offer EMI options and early-bird discounts. Book a demo for full details.','what is the placement rate':'Our placement rate is 92% 🎯. 500+ students placed at Infosys, TCS, Wipro, HCL, and Capgemini. Average: ₹7L/year.','book a free demo':'Scroll up to fill the contact form — we confirm within 30 minutes! Or WhatsApp us directly 👆'};
+function chatReply(msg){
+  addMsg(msg,'user');
+  const a=BA[msg.toLowerCase()]||"Our team can give you a detailed answer. Type 'Book a free demo' or scroll up to the form!";
+  setTimeout(()=>addMsg(a,'bot'),500);
+}
+function sendChat(){
+  const inp=document.getElementById('chatInput'),msg=inp.value.trim();if(!msg)return;inp.value='';
+  addMsg(msg,'user');const lower=msg.toLowerCase();
+  let a="Our team will reach out shortly. Book a free demo by scrolling up to the contact form.";
+  for(const k in BA){if(lower.includes(k.split(' ')[0])||lower.includes(k.split(' ')[1]||'')){a=BA[k];break;}}
+  setTimeout(()=>addMsg(a,'bot'),500);
+}
+function addMsg(t,type){
+  const m=document.getElementById('chatMessages'),d=document.createElement('div');
+  d.className='cmsg '+type;d.textContent=t;m.appendChild(d);m.scrollTop=m.scrollHeight;
+}
+
+// ─────────── EXIT POPUP ───────────
+let pShown=false;
+document.addEventListener('mouseleave',e=>{if(e.clientY<20&&!pShown){document.getElementById('exitPopup').classList.add('show');pShown=true;}});
+function closePopup(){document.getElementById('exitPopup').classList.remove('show');}
+async function popupSubmit(){
+  const email = document.getElementById('popupEmail').value.trim();
+  if(!email){alert('Please enter your email.');return;}
+  // Send a minimal lead entry for the career guide popup
+  try {
+    await fetch('/api/lead/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fname: 'Career Guide', lname: 'Request', email, phone: 'N/A', course: 'Career Guide Download (Popup)' })
+    });
+  } catch(e){}
+  closePopup();
+  setTimeout(()=>alert('🎉 Career guide on its way to '+email+'!'),300);
+}
+
+// ─────────── SMOOTH LINKS ───────────
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
+});
+</script>
+</body>
+</html>
