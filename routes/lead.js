@@ -77,13 +77,13 @@ function buildAdminEmail(lead) {
                style="display:inline-block;background:#E8500A;color:#fff;text-decoration:none;padding:13px 30px;border-radius:8px;font-weight:700;font-size:15px;">
               Reply to ${lead.fname} →
             </a>
-            <p style="margin:14px 0 0;font-size:12px;color:#5A637A;">Respond within 30 minutes as promised on the website.</p>
+            <p style="margin:14px 0 0;font-size:12px;color:#5A637A;">Our team will respond as soon as possible</p>
           </td>
         </tr>
         <!-- Footer -->
         <tr>
           <td style="background:#F8FAFC;border-top:1px solid #E2E8F0;padding:18px 36px;text-align:center;">
-            <p style="margin:0;font-size:12px;color:#9CA3AF;">Softstacks Technologies · Srinagar, J&K · info@softstacks.in</p>
+            <p style="margin:0;font-size:12px;color:#9CA3AF;">Softstacks Technologies · Srinagar, J&K · info@softstacks.org</p>
           </td>
         </tr>
       </table>
@@ -128,10 +128,10 @@ function buildStudentEmail(lead) {
           <td style="padding:28px 36px;">
             <h3 style="color:#0D1B3E;font-size:15px;font-weight:700;margin:0 0 16px;">What happens next?</h3>
             ${[
-              ['📞', 'Our trainer calls you within 30 minutes to confirm your slot.'],
+              ['📞', 'Our trainer calls you ASAP to confirm your slot.'],
               ['🗓️', 'We schedule a 30-minute FREE demo session at your preferred time.'],
               ['🎓', 'Walk away with a personalised career roadmap — zero obligation.'],
-              ['🎁', 'Get FREE study material worth ₹2,000 just for attending!'],
+              ['🎁', 'Get FREE study material just for attending!'],
             ].map(([icon, text]) => `
               <div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:14px;">
                 <div style="font-size:20px;line-height:1;flex-shrink:0;">${icon}</div>
@@ -144,7 +144,7 @@ function buildStudentEmail(lead) {
         <tr>
           <td style="padding:0 36px 36px;text-align:center;">
             <p style="margin:0 0 16px;font-size:14px;color:#5A637A;">Want to connect right away?</p>
-            <a href="https://wa.me/919999999999?text=Hi%20Softstacks!%20I%20just%20registered%20for%20the%20free%20demo%20for%20${encodeURIComponent(lead.course)}"
+            <a href="https://wa.me/919622427264?text=Hi%20Softstacks!%20I%20just%20registered%20for%20the%20free%20demo%20for%20${encodeURIComponent(lead.course)}"
                style="display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:13px 28px;border-radius:8px;font-weight:700;font-size:15px;">
               💬 Chat on WhatsApp
             </a>
@@ -154,7 +154,7 @@ function buildStudentEmail(lead) {
         <tr>
           <td style="background:#0D1B3E;padding:22px 36px;text-align:center;">
             <p style="margin:0 0 6px;color:rgba(255,255,255,.5);font-size:12px;">Softstacks Technologies</p>
-            <p style="margin:0;color:rgba(255,255,255,.35);font-size:11px;">📍 Srinagar, J&K &nbsp;|&nbsp; 📞 +91 99999 99999 &nbsp;|&nbsp; ✉️ info@softstacks.in</p>
+            <p style="margin:0;color:rgba(255,255,255,.35);font-size:11px;">📍 Srinagar, J&K &nbsp;|&nbsp; 📞 +91 7889386297 &nbsp;|&nbsp; ✉️ info@softstacks.org</p>
           </td>
         </tr>
       </table>
