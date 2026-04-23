@@ -118,7 +118,9 @@ function buildStudentEmail(lead) {
           <td style="padding:36px 36px 0;text-align:center;">
             <div style="font-size:48px;margin-bottom:16px;">🎉</div>
             <h2 style="margin:0 0 10px;color:#0D1B3E;font-size:24px;font-weight:800;">You're All Set, ${lead.fname}!</h2>
-            
+            <p style="margin:0;color:#5A637A;font-size:15px;line-height:1.6;max-width:420px;margin:0 auto;">
+              Your free demo session request for <strong style="color:#E8500A;">${lead.course}</strong> has been received.
+            </p>
           </td>
         </tr>
         <!-- What to Expect -->
