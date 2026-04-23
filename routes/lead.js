@@ -118,9 +118,7 @@ function buildStudentEmail(lead) {
           <td style="padding:36px 36px 0;text-align:center;">
             <div style="font-size:48px;margin-bottom:16px;">🎉</div>
             <h2 style="margin:0 0 10px;color:#0D1B3E;font-size:24px;font-weight:800;">You're All Set, ${lead.fname}!</h2>
-            <p style="margin:0;color:#5A637A;font-size:15px;line-height:1.6;max-width:420px;margin:0 auto;">
-              Your free demo session request for <strong style="color:#E8500A;">${lead.course}</strong> has been received. Our team will contact you within <strong>30 minutes</strong>.
-            </p>
+            
           </td>
         </tr>
         <!-- What to Expect -->
@@ -128,7 +126,7 @@ function buildStudentEmail(lead) {
           <td style="padding:28px 36px;">
             <h3 style="color:#0D1B3E;font-size:15px;font-weight:700;margin:0 0 16px;">What happens next?</h3>
             ${[
-              ['📞', 'Our trainer calls you ASAP to confirm your slot.'],
+              ['📞', 'Our team will call you ASAP to confirm your slot.'],
               ['🗓️', 'We schedule a 30-minute FREE demo session at your preferred time.'],
               ['🎓', 'Walk away with a personalised career roadmap — zero obligation.'],
               ['🎁', 'Get FREE study material just for attending!'],
