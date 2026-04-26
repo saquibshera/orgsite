@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Softstacks Technologies – IT Training Institute in Srinagar | AI, Cloud, Full Stack</title>
 <meta name="description" content="Job-ready IT training in Srinagar with Microsoft Certified Trainers. AI,Azure Cloud,AI Agent development,Machine learning, Power BI,Full Stack, Python courses with placement support."/>
 <meta name="keywords" content="IT training institute in Srinagar, AI course near me, full stack training with placement,Data Analysis training,Machine learning,Agentic AI training Azure cloud training Srinagar,
@@ -16,7 +16,7 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--text);overflow-x:hidden;}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,27,62,0.97);backdrop-filter:blur(12px);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid rgba(255,255,255,0.08);transition:all .3s;}
-.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(.85rem,2.2vw,1.4rem);color:#fff;letter-spacing:-.02em;white-space:nowrap;flex-shrink:1;min-width:0;}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:#fff;letter-spacing:-.02em;}
 .nav-logo span{color:var(--accent2);}
 .nav-links{display:flex;gap:2rem;list-style:none;}
 .nav-links a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s;}
@@ -279,7 +279,7 @@ footer{background:#0A1428;color:rgba(255,255,255,.65);padding:4rem 2rem 2rem;}
 .cq{background:var(--light);border:1px solid var(--border);border-radius:99px;font-size:.75rem;padding:.3rem .75rem;cursor:pointer;color:var(--navy);font-weight:500;transition:background .15s,color .15s;}
 .cq:hover{background:#FFFBE0;border-color:var(--accent);color:var(--accent);}
 .chat-input-row{display:flex;border-top:1px solid var(--border);}
-.chat-input{flex:1;padding:.7rem 1rem;border:none;font-family:'DM Sans',sans-serif;font-size:16px;outline:none;}
+.chat-input{flex:1;padding:.7rem 1rem;border:none;font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none;}
 .chat-send{background:var(--accent);color:white;border:none;padding:.7rem 1rem;cursor:pointer;font-size:.9rem;transition:background .2s;}
 .chat-send:hover{background:var(--accent2);}
 
@@ -306,152 +306,22 @@ footer{background:#0A1428;color:rgba(255,255,255,.65);padding:4rem 2rem 2rem;}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
 
-/* ═══════════════════════════════════════════════
-   FULLY FLUID RESPONSIVE SYSTEM
-   Works on every screen: 320px → 2560px+
-   Breakpoints: xs<480 | sm<640 | md<900 | lg<1200 | xl+
-═══════════════════════════════════════════════ */
-
-/* --- Universal cross-browser fixes (all screens) --- */
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
-*{box-sizing:border-box;min-width:0;} /* min-width:0 prevents grid blowout */
-body{overflow-x:hidden;}
-
-/* Fix Safari backdrop-filter */
-nav{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);}
-.hero-card{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
-
-/* iOS button/select resets */
-button,input[type=submit],input[type=button]{-webkit-appearance:none;appearance:none;}
-select{-webkit-appearance:none;appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A637A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;}
-
-/* All inputs: font-size 16px → prevents iOS auto-zoom on focus */
-input,select,textarea{font-size:16px !important;}
-
-/* Touch feedback */
-.btn-primary,.btn-secondary,.rec-btn,.form-submit,.nav-cta,.hamburger,
-.cq,.rec-option,.mobile-menu a,.company-chip{touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
-.mobile-menu a{-webkit-tap-highlight-color:rgba(212,168,0,.1);}
-
-/* Overflow-safe text */
-h1,h2,h3,h4,p,span,a,li,div{word-break:break-word;overflow-wrap:break-word;}
-
-/* Fluid section padding — scales smoothly with viewport */
-section{padding:clamp(2.5rem,7vw,6rem) clamp(1rem,5vw,2rem);}
-.container{max-width:1200px;margin:0 auto;width:100%;padding:0 clamp(1rem,4vw,2rem);}
-
-/* --- NAV — fluid --- */
-nav{padding:0 clamp(.75rem,3vw,2rem);}
-.nav-cta{padding:.5rem clamp(.75rem,2vw,1.4rem);font-size:clamp(.78rem,1.5vw,.9rem);}
-
-/* --- HERO — fluid grid --- */
-.hero{min-height:100svh;min-height:100vh;}
-.hero-inner{
-  padding:clamp(3rem,8vw,5rem) clamp(1rem,4vw,2rem) clamp(2.5rem,5vw,4rem);
-  gap:clamp(2rem,4vw,4rem);
-}
-.hero h1{font-size:clamp(1.8rem,5.5vw,3.8rem);}
-.hero-sub{font-size:clamp(.9rem,1.8vw,1.1rem);}
-.hero-trust{gap:clamp(1rem,3vw,2rem);flex-wrap:wrap;}
-.trust-num{font-size:clamp(1.3rem,3.5vw,1.8rem);}
-
-/* --- PROOF STRIP --- */
-.proof-strip{padding:clamp(1rem,3vw,1.8rem) clamp(1rem,3vw,2rem);overflow:hidden;}
-.proof-inner{flex-wrap:wrap;gap:clamp(.75rem,2vw,2rem);}
-.proof-num{font-size:clamp(1.4rem,3vw,2rem);}
-.proof-desc{font-size:clamp(.7rem,1.2vw,.82rem);}
-
-/* --- SECTION TITLES --- */
-.section-title{font-size:clamp(1.5rem,4vw,2.8rem);}
-.section-sub{font-size:clamp(.9rem,1.5vw,1.05rem);}
-
-/* --- CARDS & GRIDS — auto-fill fluid --- */
-.courses-grid{grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:clamp(1rem,2vw,1.5rem);}
-.why-grid{grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:clamp(1rem,2vw,1.5rem);}
-.placement-stats{grid-template-columns:repeat(auto-fill,minmax(min(180px,45%),1fr));gap:clamp(1rem,2vw,1.5rem);}
-.stories-grid{grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:clamp(1rem,2vw,1.5rem);}
-.testimonials-grid{grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:clamp(1rem,2vw,1.5rem);}
-
-/* --- FORM card --- */
-.form-group input,.form-group select{height:clamp(44px,5.5vw,52px);}
-.form-submit{min-height:clamp(48px,6vw,54px);font-size:clamp(.9rem,1.8vw,1rem);}
-.form-card{padding:clamp(1.25rem,3vw,2.5rem);}
-
-/* --- FOOTER --- */
-footer{padding:clamp(2.5rem,5vw,4rem) clamp(1rem,4vw,2rem) clamp(1.5rem,3vw,2rem);}
-.footer-inner{max-width:1200px;margin:0 auto;}
-
-/* --- PLACEMENT STAT NUM --- */
-.placement-stat .num{font-size:clamp(1.6rem,3.5vw,2.2rem);}
-
-/* --- RECOMMENDER --- */
-.recommender-inner{padding:clamp(1.25rem,3vw,2.5rem);margin:clamp(1.5rem,3vw,3rem) auto 0;}
-.rec-options{grid-template-columns:repeat(auto-fill,minmax(min(140px,45%),1fr));gap:clamp(.5rem,1.5vw,.75rem);}
-.rec-option{font-size:clamp(.8rem,1.5vw,.88rem);padding:clamp(.6rem,1.5vw,.75rem) clamp(.75rem,2vw,1rem);}
-
-/* --- CHAT WINDOW — fluid position --- */
-.chat-window{width:clamp(260px,85vw,300px);right:0;}
-
-/* ─── BREAKPOINT: max-width 900px (tablets & phones) ─── */
 @media(max-width:900px){
-  .nav-links{display:none;}
-  .hamburger{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:.4rem;}
-  .hero-inner{grid-template-columns:1fr;}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem;padding:4rem 1.5rem 3rem;}
   .hero-visual{display:none;}
-  .skills-inner{grid-template-columns:1fr;gap:2rem;}
-  .form-wrap{grid-template-columns:1fr;gap:clamp(1.5rem,4vw,2.5rem);}
+  .form-wrap{grid-template-columns:1fr;gap:2.5rem;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
   .form-row{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:clamp(1.5rem,3vw,2rem);}
-  .popup-form{flex-direction:column;gap:.6rem;}
-  .popup-form input,.popup-form button{width:100%;min-height:48px;}
+  .popup-form{flex-direction:column;}
+  .skills-inner{grid-template-columns:1fr;}
 }
-
-/* ─── BREAKPOINT: max-width 640px (phones) ─── */
-@media(max-width:640px){
-  .hero-ctas{flex-direction:column;gap:.65rem;}
-  .hero-ctas .btn-primary,.hero-ctas .btn-secondary{width:100%;text-align:center;}
-  .proof-inner{display:grid;grid-template-columns:1fr 1fr;justify-items:center;}
-  .proof-stat:nth-child(5){grid-column:1/-1;}
-  .proof-divider{display:none;}
+@media(max-width:600px){
+  section{padding:3.5rem 1.25rem;}
   .footer-grid{grid-template-columns:1fr;}
-  .footer-bottom{flex-direction:column;text-align:center;gap:.4rem;}
-  .chat-window{width:calc(100vw - 2rem);right:calc(-1 * (100vw - 2rem - 52px));}
-  .nav-cta{font-size:.78rem;padding:.45rem .85rem;}
-  .urgency-bar{font-size:.76rem;padding:.5rem 1rem;}
-}
-
-/* ─── BREAKPOINT: max-width 480px (small phones) ─── */
-@media(max-width:480px){
-  nav{padding:0 .75rem;}
-  .hero{min-height:100svh;}
-  .company-chip{font-size:.78rem;padding:.4rem .8rem;}
-  .cq{font-size:.75rem;min-height:36px;}
-  .popup-box{padding:1.25rem 1rem;border-radius:12px;}
-  .popup-box h3{font-size:1.1rem;}
-  .wa-float,.chat-float{right:.75rem;}
-}
-
-/* ─── LARGE screens: ≥1400px ─── */
-@media(min-width:1400px){
-  .hero-inner{max-width:1400px;padding:6rem 3rem 5rem;}
-  .container{max-width:1300px;}
-  .courses-grid{grid-template-columns:repeat(4,1fr);}
-}
-
-/* ─── WIDE screens: ≥1800px ─── */
-@media(min-width:1800px){
-  .hero h1{font-size:4.5rem;}
-  .container{max-width:1500px;}
-}
-
-/* Safe area insets (notch / home bar) */
-@supports(padding-bottom:env(safe-area-inset-bottom)){
-  .wa-float{bottom:calc(1.5rem + env(safe-area-inset-bottom));}
-  .chat-float{bottom:calc(5.5rem + env(safe-area-inset-bottom));}
-  footer{padding-bottom:calc(clamp(1.5rem,3vw,2rem) + env(safe-area-inset-bottom));}
-  .mobile-menu{padding-bottom:calc(1rem + env(safe-area-inset-bottom));}
+  .proof-divider{display:none;}
+  .chat-float,.wa-float{right:1rem;}
 }
 </style>
 </head>
@@ -704,11 +574,11 @@ footer{padding:clamp(2.5rem,5vw,4rem) clamp(1rem,4vw,2rem) clamp(1.5rem,3vw,2rem
         <p>Limited seats available. Hurry — next batch starts May 5th!</p>
         <div id="leadForm">
           <div class="form-row">
-            <div class="form-group"><label>First Name *</label><input type="text" id="fname" placeholder="Amir" autocomplete="given-name" required/></div>
-            <div class="form-group"><label>Last Name *</label><input type="text" id="lname" placeholder="Khan" autocomplete="family-name" required/></div>
+            <div class="form-group"><label>First Name *</label><input type="text" id="fname" placeholder="Amir" required/></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" id="lname" placeholder="Khan" required/></div>
           </div>
-          <div class="form-group"><label>Email Address *</label><input type="email" id="email" placeholder="amir@email.com" autocomplete="email" inputmode="email" required/></div>
-          <div class="form-group"><label>Phone Number *</label><input type="tel" id="phone" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" required/></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" id="email" placeholder="amir@email.com" required/></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" id="phone" placeholder="+91 98765 43210" required/></div>
           <div class="form-group"><label>Course Interest *</label>
             <select id="course">
               <option value="">Select a course...</option>
@@ -1060,11 +930,7 @@ function addMsg(t,type){
 
 // ─────────── EXIT POPUP ───────────
 let pShown=false;
-function showPopup(){if(!pShown){document.getElementById('exitPopup').classList.add('show');pShown=true;}}
-// Desktop: trigger on cursor leaving viewport
-document.addEventListener('mouseleave',e=>{if(e.clientY<20)showPopup();});
-// Mobile: trigger after 45 seconds of browsing
-if('ontouchstart' in window){setTimeout(showPopup, 45000);}
+document.addEventListener('mouseleave',e=>{if(e.clientY<20&&!pShown){document.getElementById('exitPopup').classList.add('show');pShown=true;}});
 function closePopup(){document.getElementById('exitPopup').classList.remove('show');}
 async function popupSubmit(){
   const email = document.getElementById('popupEmail').value.trim();
@@ -1085,10 +951,6 @@ async function popupSubmit(){
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
 });
-
-// Chat Enter key
-const chatInp=document.getElementById('chatInput');
-if(chatInp){chatInp.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendChat();}});}
 </script>
 </body>
 </html>
